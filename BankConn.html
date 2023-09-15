@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Loan Application</title>
+    <link rel="stylesheet" href="BankConn.css">
+</head>
+<body>
+    <header>
+        <h1>Farmers Loan Application</h1>
+    </header>
+    <main>
+        <section id="loan-form">
+            <h2>Loan Application Form</h2>
+            <form action="process_loan.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="amount">Loan Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="purpose">Loan Purpose:</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="Crop Expansion">Crop Expansion</option>
+                    <option value="Equipment Purchase">Equipment Purchase</option>
+                    <option value="Livestock">Livestock</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- <p>&copy; 2023 Farmers Loan Application</p> -->
+    </footer>
+</body>
+</html>

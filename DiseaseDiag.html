@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Diagnosis</title>
+    <link rel="stylesheet" href="DiseaseDiag.css">
+</head>
+<body>
+    <header>
+        <h1>Plant Disease Diagnosis</h1>
+    </header>
+    <main>
+        <section id="diagnosis-form">
+            <h2>Diagnosis Form</h2>
+            <form action="diagnosis.php" method="POST">
+                <label for="image-upload">Upload Plant Image:</label>
+                <input type="file" id="image-upload" name="image" accept="image/*" required>
+
+                <button type="submit">Diagnose Disease</button>
+            </form>
+        </section>
+        <section id="diagnosis-result">
+            <h2>Diagnosis Result</h2>
+            <p>Result: Tomato Late Blight</p>
+            <p>Confidence: 85%</p>
+            <img src="disease_image.jpg" alt="Tomato Late Blight">
+        </section>
+    </main>
+    <footer>
+        <!-- <p>&copy; 2023 Plant Disease Diagnosis</p> -->
+    </footer>
+</body>
+</html>
